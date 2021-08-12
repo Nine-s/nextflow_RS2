@@ -23,6 +23,7 @@ params.outdir = 'results'
 
 process MERGE_SAM {
     publishDir params.outdir
+    label 'mergeBash'
     
     input:
     file out_sam
