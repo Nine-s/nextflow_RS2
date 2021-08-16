@@ -50,7 +50,7 @@ workflow {
         .view()
         .set{ read_pairs_ch }
 
-    //DOWNLOAD_READS_SMALL().splitFastq(by:4642229, pe:true, file:true).view().set{read_pairs_ch}
+    //DOWNLOAD_READS_SMALL().splitFastq(by:1465966, pe:true, file:true).view().set{read_pairs_ch}
     //DOWNLOAD_REFERENCE_ANNOTATION()
     //DOWNLOAD_REFERENCE_GENOME()
     FASTQC( read_pairs_ch )
