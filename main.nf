@@ -46,7 +46,7 @@ workflow {
 
     Channel
         .fromFilePairs(params.reads, flat:true)
-        .splitFastq(by:4642229*3, pe:true, file:true)
+        .splitFastq(by:139345, pe:true, file:true)
         .view()
         .set{ read_pairs_ch }
 
